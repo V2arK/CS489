@@ -344,34 +344,19 @@ Finally, the reverb signal and the original signal were mixed following a set ra
 \end{algorithmic}
 \end{algorithm}
 
+\newpage
+\subsubsection{Future developments}
+
+Our current model incorporated a basic implementation of dispersion through delay line and filtering. Moving forward, we will explore more advanced physical modelling techniques to simulate the dispersion effects. For instance, we can further calibrate the phase of the audio signal to achieve the effect of dispersion, and incorporate the impulse response (IR) of an actual spring to achieve a more complex and authentic reverb effect.
+
+Although we omitted the issue of computational efficiency this time to simplify the process, we could investigate into turning the algorithm we proposed into a real-time software in the future, which enable it as a tool we could use for live performance and real-time recording applications. This involves refactoring our code architecture, improving overall execution efficiency and considering the delay in the output of the effect. We will reference the sections on algorithm efficiency in the paper ``Efficient Dispersion Generation Structures for Spring Reverb Emulation'' for improvements.
+
 %%%%%%%%%%%%%%%%%%%%%%
 
 \newpage
 \section{Evaluation and Comparison}
-The testing process is designed to capture the characteristics of the spring reverb pedal and compare them with the digital emulation provided by the VST plugin. The following steps outline the testing methodology:
-\begin{enumerate}
-    \item \textbf{Recording Dry Signal}: A guitar is connected directly to a sound interface to record a "dry" signal, which is devoid of any reverb or effects.
-    \item \textbf{Physical Pedal Testing}: The recorded dry signal is then played back through the physical spring reverb pedal, and the output is captured by the sound interface. This process ensures that the effect of the pedal on the original signal is accurately recorded.
-    \item \textbf{Software Reverb VST Application}: The same dry signal is imported into a Digital Audio Workstation (DAW), where the spring reverb VST plugin is applied. This step allows for direct comparison between the physical pedal's effect and the software emulation.
-\end{enumerate}
 
-\subsection{Listening Tests}
-The listening tests are designed to assess the perceptual differences between the hardware (physical spring reverb pedal) and software (VST plugin) reverb effects. To ensure a fair and unbiased comparison, the following methodology will be employed:
-
-\begin{enumerate}
-    \item \textbf{Blind Test Setup}: The tests will be conducted in a blind manner, where the listeners are unaware of whether they are hearing the hardware or software reverb effect. This approach minimizes bias and allows for an objective assessment of the sound quality and characteristics of each reverb type.
-    
-    \item \textbf{Participants}: At least 10 friends of our group member will participate in the listening tests. This small but diverse group of listeners provides a range of perspectives and audio experience, contributing to a more rounded evaluation of the reverb effects.
-    
-    \item \textbf{Test Signals}: The same recorded dry guitar signal will be used for all tests. This signal will be processed through both the physical spring reverb pedal and the software VST plugin to create two versions of the reverb affected signal.
-    
-    \item \textbf{Evaluation Criteria}: Listeners will be asked to evaluate the reverb effects based on several criteria, including perceived realism, depth, warmth, and overall preference. These subjective metrics aim to capture the nuances that differentiate the hardware and software solutions.
-    
-    \item \textbf{Feedback Collection}: After each listening session, participants will provide feedback on which version they believe is the hardware reverb and which is the software. They will also rate each version based on the evaluation criteria. This feedback will be collected anonymously to further ensure the integrity of the test results.
-\end{enumerate}
-
-The results of the listening tests will be analyzed to determine if there are consistent preferences or perceptual differences between the hardware and software reverbs among the group members. This analysis will contribute valuable insights into the effectiveness of the digital emulation compared to the physical reverb effect, as well as inform potential improvements for both the pedal design and the VST plugin development.
-
+\newpage
 \section{Conclusion}
 
 
