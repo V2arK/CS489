@@ -1,0 +1,455 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.5.17)  5 APR 2024 15:16
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**/Users/honglin/Library/CloudStorage/OneDrive-个人/UW大学/3B/CS489/P1/spring.tex
+(/Users/honglin/Library/CloudStorage/OneDrive-个人/UW大学/3B/CS489/P1/spring.tex
+LaTeX2e <2022-11-01> patch level 1
+L3 programming layer <2023-02-22> (/usr/local/texlive/2023/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2022/07/02 v1.4n Standard LaTeX document class
+(/usr/local/texlive/2023/texmf-dist/tex/latex/base/size11.clo
+File: size11.clo 2022/07/02 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count185
+\c@section=\count186
+\c@subsection=\count187
+\c@subsubsection=\count188
+\c@paragraph=\count189
+\c@subparagraph=\count190
+\c@figure=\count191
+\c@table=\count192
+\abovecaptionskip=\skip48
+\belowcaptionskip=\skip49
+\bibindent=\dimen140
+) (/usr/local/texlive/2023/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks16
+) (/usr/local/texlive/2023/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
+) (/usr/local/texlive/2023/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 107.
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen141
+\Gin@req@width=\dimen142
+) (/usr/local/texlive/2023/texmf-dist/tex/latex/tools/tabularx.sty
+Package: tabularx 2020/01/15 v2.11c `tabularx' package (DPC)
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/tools/array.sty
+Package: array 2022/09/04 v2.5g Tabular extension package (FMi)
+\col@sep=\dimen143
+\ar@mcellbox=\box51
+\extrarowheight=\dimen144
+\NC@list=\toks17
+\extratabsurround=\skip50
+\backup@length=\skip51
+\ar@cellbox=\box52
+)
+\TX@col@width=\dimen145
+\TX@old@table=\dimen146
+\TX@old@col=\dimen147
+\TX@target=\dimen148
+\TX@delta=\dimen149
+\TX@cols=\count193
+\TX@ftn=\toks18
+) (/usr/local/texlive/2023/texmf-dist/tex/latex/lipsum/lipsum.sty (/usr/local/texlive/2023/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty (/usr/local/texlive/2023/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2023-02-22 L3 programming layer (loader) 
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2023-01-16 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count194
+\l__pdf_internal_box=\box53
+))
+Package: l3keys2e 2023-02-02 LaTeX2e option processing using LaTeX3 keys
+)
+Package: lipsum 2021-09-20 v2.7 150 paragraphs of Lorem Ipsum dummy text
+\g__lipsum_par_int=\count195
+\l__lipsum_a_int=\count196
+\l__lipsum_b_int=\count197
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/lipsum/lipsum.ltd.tex)) (/usr/local/texlive/2023/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+ (/usr/local/texlive/2023/texmf-dist/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+ (/usr/local/texlive/2023/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2022/02/03 v1.0f TeX engine tests
+))
+\Gm@cnth=\count198
+\Gm@cntv=\count199
+\c@Gm@tempcnt=\count266
+\Gm@bindingoffset=\dimen150
+\Gm@wd@mp=\dimen151
+\Gm@odd@mp=\dimen152
+\Gm@even@mp=\dimen153
+\Gm@layoutwidth=\dimen154
+\Gm@layoutheight=\dimen155
+\Gm@layouthoffset=\dimen156
+\Gm@layoutvoffset=\dimen157
+\Gm@dimlist=\toks19
+) (/usr/local/texlive/2023/texmf-dist/tex/latex/adjustbox/adjustbox.sty
+Package: adjustbox 2022/10/17 v1.3a Adjusting TeX boxes (trim, clip, ...)
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
+ (/usr/local/texlive/2023/texmf-dist/tex/generic/xkeyval/xkeyval.tex (/usr/local/texlive/2023/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks20
+\XKV@tempa@toks=\toks21
+)
+\XKV@depth=\count267
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+)) (/usr/local/texlive/2023/texmf-dist/tex/latex/adjustbox/adjcalc.sty
+Package: adjcalc 2012/05/16 v1.1 Provides advanced setlength with multiple back-ends (calc, etex, pgfmath)
+) (/usr/local/texlive/2023/texmf-dist/tex/latex/adjustbox/trimclip.sty
+Package: trimclip 2020/08/19 v1.2 Trim and clip general TeX material
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/collectbox/collectbox.sty
+Package: collectbox 2022/10/17 v0.4c Collect macro arguments as boxes
+\collectedbox=\box54
+)
+\tc@llx=\dimen158
+\tc@lly=\dimen159
+\tc@urx=\dimen160
+\tc@ury=\dimen161
+Package trimclip Info: Using driver 'tc-pdftex.def'.
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/adjustbox/tc-pdftex.def
+File: tc-pdftex.def 2019/01/04 v2.2 Clipping driver for pdftex
+))
+\adjbox@Width=\dimen162
+\adjbox@Height=\dimen163
+\adjbox@Depth=\dimen164
+\adjbox@Totalheight=\dimen165
+\adjbox@pwidth=\dimen166
+\adjbox@pheight=\dimen167
+\adjbox@pdepth=\dimen168
+\adjbox@ptotalheight=\dimen169
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty
+Package: ifoddpage 2022/10/18 v1.2 Conditionals for odd/even page detection
+\c@checkoddpage=\count268
+) (/usr/local/texlive/2023/texmf-dist/tex/latex/varwidth/varwidth.sty
+Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
+\@vwid@box=\box55
+\sift@deathcycles=\count269
+\@vwid@loff=\dimen170
+\@vwid@roff=\dimen171
+)) (/usr/local/texlive/2023/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count270
+\float@exts=\toks22
+\float@box=\box56
+\@float@everytoks=\toks23
+\@floatcapt=\box57
+) (/usr/local/texlive/2023/texmf-dist/tex/latex/tools/longtable.sty
+Package: longtable 2021-09-01 v4.17 Multi-page Table package (DPC)
+\LTleft=\skip52
+\LTright=\skip53
+\LTpre=\skip54
+\LTpost=\skip55
+\LTchunksize=\count271
+\LTcapwidth=\dimen172
+\LT@head=\box58
+\LT@firsthead=\box59
+\LT@foot=\box60
+\LT@lastfoot=\box61
+\LT@gbox=\box62
+\LT@cols=\count272
+\LT@rows=\count273
+\c@LT@tables=\count274
+\c@LT@chunks=\count275
+\LT@p@ftn=\toks24
+) (./spring.aux)
+\openout1 = `spring.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+ (/usr/local/texlive/2023/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count276
+\scratchdimen=\dimen173
+\scratchbox=\box63
+\nofMPsegments=\count277
+\nofMParguments=\count278
+\everyMPshowfont=\toks25
+\MPscratchCnt=\count279
+\MPscratchDim=\dimen174
+\MPnumerator=\count280
+\makeMPintoPDFobject=\count281
+\everyMPtoPDFconversion=\toks26
+) (/usr/local/texlive/2023/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
+))
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(72.26999pt, 452.9679pt, 72.26999pt)
+* v-part:(T,H,B)=(72.26999pt, 700.50687pt, 72.26999pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=452.9679pt
+* \textheight=700.50687pt
+* \oddsidemargin=0.0pt
+* \evensidemargin=0.0pt
+* \topmargin=-37.0pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=11.0pt
+* \footskip=30.0pt
+* \marginparwidth=50.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 14.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 14.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 14.
+(./spring.toc)
+\tf@toc=\write3
+\openout3 = `spring.toc'.
+
+ [1
+
+{/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] [3]
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <10.95> on input line 47.
+<IMG_7909.jpg, id=17, 6070.68pt x 8094.24pt>
+File: IMG_7909.jpg Graphic file (type jpg)
+<use IMG_7909.jpg>
+Package pdftex.def Info: IMG_7909.jpg  used on input line 47.
+(pdftex.def)             Requested size: 135.89174pt x 181.18623pt.
+<IMG_8080.jpg, id=18, 6070.68pt x 8094.24pt>
+File: IMG_8080.jpg Graphic file (type jpg)
+<use IMG_8080.jpg>
+Package pdftex.def Info: IMG_8080.jpg  used on input line 51.
+(pdftex.def)             Requested size: 135.89174pt x 181.18623pt.
+<IMG_8082.jpg, id=19, 6070.68pt x 8094.24pt>
+File: IMG_8082.jpg Graphic file (type jpg)
+<use IMG_8082.jpg>
+Package pdftex.def Info: IMG_8082.jpg  used on input line 55.
+(pdftex.def)             Requested size: 135.89174pt x 181.18623pt.
+<IMG_8084.jpg, id=20, 8094.24pt x 6070.68pt>
+File: IMG_8084.jpg Graphic file (type jpg)
+<use IMG_8084.jpg>
+Package pdftex.def Info: IMG_8084.jpg  used on input line 59.
+(pdftex.def)             Requested size: 135.89174pt x 101.89409pt.
+<IMG_8085.jpg, id=21, 6070.68pt x 8094.24pt>
+File: IMG_8085.jpg Graphic file (type jpg)
+<use IMG_8085.jpg>
+Package pdftex.def Info: IMG_8085.jpg  used on input line 63.
+(pdftex.def)             Requested size: 135.89174pt x 181.18623pt.
+<IMG_8086.jpg, id=22, 6070.68pt x 8094.24pt>
+File: IMG_8086.jpg Graphic file (type jpg)
+<use IMG_8086.jpg>
+Package pdftex.def Info: IMG_8086.jpg  used on input line 67.
+(pdftex.def)             Requested size: 135.89174pt x 181.18623pt.
+<IMG_8095.jpg, id=23, 6070.68pt x 8094.24pt>
+File: IMG_8095.jpg Graphic file (type jpg)
+<use IMG_8095.jpg>
+Package pdftex.def Info: IMG_8095.jpg  used on input line 71.
+(pdftex.def)             Requested size: 135.89174pt x 181.18623pt.
+<IMG_8096.jpg, id=24, 3035.34pt x 4047.12pt>
+File: IMG_8096.jpg Graphic file (type jpg)
+<use IMG_8096.jpg>
+Package pdftex.def Info: IMG_8096.jpg  used on input line 75.
+(pdftex.def)             Requested size: 135.89174pt x 181.18623pt.
+<IMG_8097.jpg, id=25, 3035.34pt x 4047.12pt>
+File: IMG_8097.jpg Graphic file (type jpg)
+<use IMG_8097.jpg>
+Package pdftex.def Info: IMG_8097.jpg  used on input line 79.
+(pdftex.def)             Requested size: 135.89174pt x 181.18623pt.
+<IMG_8745.jpg, id=26, 6070.68pt x 8094.24pt>
+File: IMG_8745.jpg Graphic file (type jpg)
+<use IMG_8745.jpg>
+Package pdftex.def Info: IMG_8745.jpg  used on input line 83.
+(pdftex.def)             Requested size: 40.76544pt x 54.3435pt.
+<IMG_8746.jpg, id=27, 6070.68pt x 8094.24pt>
+File: IMG_8746.jpg Graphic file (type jpg)
+<use IMG_8746.jpg>
+Package pdftex.def Info: IMG_8746.jpg  used on input line 84.
+(pdftex.def)             Requested size: 40.76544pt x 54.3435pt.
+<IMG_8748.jpg, id=28, 6070.68pt x 8094.24pt>
+File: IMG_8748.jpg Graphic file (type jpg)
+<use IMG_8748.jpg>
+Package pdftex.def Info: IMG_8748.jpg  used on input line 85.
+(pdftex.def)             Requested size: 40.76544pt x 54.3435pt.
+<IMG_8749.jpg, id=29, 6070.68pt x 8094.24pt>
+File: IMG_8749.jpg Graphic file (type jpg)
+<use IMG_8749.jpg>
+Package pdftex.def Info: IMG_8749.jpg  used on input line 89.
+(pdftex.def)             Requested size: 135.89174pt x 181.18623pt.
+<IMG_8767.jpg, id=30, 3035.34pt x 4047.12pt>
+File: IMG_8767.jpg Graphic file (type jpg)
+<use IMG_8767.jpg>
+Package pdftex.def Info: IMG_8767.jpg  used on input line 93.
+(pdftex.def)             Requested size: 135.89174pt x 181.18623pt.
+<IMG_8770.jpg, id=31, 5733.42pt x 4300.065pt>
+File: IMG_8770.jpg Graphic file (type jpg)
+<use IMG_8770.jpg>
+Package pdftex.def Info: IMG_8770.jpg  used on input line 97.
+(pdftex.def)             Requested size: 40.76544pt x 30.51033pt.
+<IMG_8771.jpg, id=32, 4300.065pt x 5733.42pt>
+File: IMG_8771.jpg Graphic file (type jpg)
+<use IMG_8771.jpg>
+Package pdftex.def Info: IMG_8771.jpg  used on input line 98.
+(pdftex.def)             Requested size: 40.76544pt x 54.32808pt.
+<IMG_8772.jpg, id=33, 4300.065pt x 5733.42pt>
+File: IMG_8772.jpg Graphic file (type jpg)
+<use IMG_8772.jpg>
+Package pdftex.def Info: IMG_8772.jpg  used on input line 99.
+(pdftex.def)             Requested size: 40.76544pt x 54.32808pt.
+<IMG_8773.jpg, id=34, 8094.24pt x 6070.68pt>
+File: IMG_8773.jpg Graphic file (type jpg)
+<use IMG_8773.jpg>
+Package pdftex.def Info: IMG_8773.jpg  used on input line 103.
+(pdftex.def)             Requested size: 63.41522pt x 47.5197pt.
+<IMG_8774.jpg, id=35, 8094.24pt x 6070.68pt>
+File: IMG_8774.jpg Graphic file (type jpg)
+<use IMG_8774.jpg>
+Package pdftex.def Info: IMG_8774.jpg  used on input line 104.
+(pdftex.def)             Requested size: 63.41522pt x 47.5197pt.
+<IMG_8776.jpg, id=36, 8094.24pt x 6070.68pt>
+File: IMG_8776.jpg Graphic file (type jpg)
+<use IMG_8776.jpg>
+Package pdftex.def Info: IMG_8776.jpg  used on input line 108.
+(pdftex.def)             Requested size: 135.89174pt x 101.89409pt.
+<IMG_8779.jpg, id=37, 6070.68pt x 8094.24pt>
+File: IMG_8779.jpg Graphic file (type jpg)
+<use IMG_8779.jpg>
+Package pdftex.def Info: IMG_8779.jpg  used on input line 112.
+(pdftex.def)             Requested size: 135.89174pt x 181.18623pt.
+<IMG_8783.jpg, id=38, 8094.24pt x 6070.68pt>
+File: IMG_8783.jpg Graphic file (type jpg)
+<use IMG_8783.jpg>
+Package pdftex.def Info: IMG_8783.jpg  used on input line 116.
+(pdftex.def)             Requested size: 135.89174pt x 101.89409pt.
+<IMG_8784.jpg, id=39, 6070.68pt x 8094.24pt>
+File: IMG_8784.jpg Graphic file (type jpg)
+<use IMG_8784.jpg>
+Package pdftex.def Info: IMG_8784.jpg  used on input line 120.
+(pdftex.def)             Requested size: 135.89174pt x 181.18623pt.
+<IMG_9382.jpg, id=40, 4047.12pt x 3035.34pt>
+File: IMG_9382.jpg Graphic file (type jpg)
+<use IMG_9382.jpg>
+Package pdftex.def Info: IMG_9382.jpg  used on input line 124.
+(pdftex.def)             Requested size: 135.89174pt x 101.89409pt.
+<IMG_9383.jpg, id=41, 5733.42pt x 4300.065pt>
+File: IMG_9383.jpg Graphic file (type jpg)
+<use IMG_9383.jpg>
+Package pdftex.def Info: IMG_9383.jpg  used on input line 128.
+(pdftex.def)             Requested size: 135.89174pt x 101.89795pt.
+<IMG_9384.jpg, id=42, 5733.42pt x 4300.065pt>
+File: IMG_9384.jpg Graphic file (type jpg)
+<use IMG_9384.jpg>
+Package pdftex.def Info: IMG_9384.jpg  used on input line 132.
+(pdftex.def)             Requested size: 135.89174pt x 101.89795pt.
+<IMG_9385.jpg, id=43, 5733.42pt x 4300.065pt>
+File: IMG_9385.jpg Graphic file (type jpg)
+<use IMG_9385.jpg>
+Package pdftex.def Info: IMG_9385.jpg  used on input line 136.
+(pdftex.def)             Requested size: 135.89174pt x 101.89795pt.
+<IMG_9593.jpg, id=44, 3035.34pt x 4047.12pt>
+File: IMG_9593.jpg Graphic file (type jpg)
+<use IMG_9593.jpg>
+Package pdftex.def Info: IMG_9593.jpg  used on input line 140.
+(pdftex.def)             Requested size: 135.89174pt x 181.18623pt.
+<IMG_9594.jpg, id=45, 6070.68pt x 8094.24pt>
+File: IMG_9594.jpg Graphic file (type jpg)
+<use IMG_9594.jpg>
+Package pdftex.def Info: IMG_9594.jpg  used on input line 144.
+(pdftex.def)             Requested size: 135.89174pt x 181.18623pt.
+<IMG_9596.jpg, id=46, 6070.68pt x 8094.24pt>
+File: IMG_9596.jpg Graphic file (type jpg)
+<use IMG_9596.jpg>
+Package pdftex.def Info: IMG_9596.jpg  used on input line 148.
+(pdftex.def)             Requested size: 135.89174pt x 181.18623pt.
+<IMG_9597.jpg, id=47, 4047.12pt x 3035.34pt>
+File: IMG_9597.jpg Graphic file (type jpg)
+<use IMG_9597.jpg>
+Package pdftex.def Info: IMG_9597.jpg  used on input line 152.
+(pdftex.def)             Requested size: 135.89174pt x 101.89409pt.
+<IMG_9603.jpg, id=48, 4300.065pt x 5733.42pt>
+File: IMG_9603.jpg Graphic file (type jpg)
+<use IMG_9603.jpg>
+Package pdftex.def Info: IMG_9603.jpg  used on input line 156.
+(pdftex.def)             Requested size: 135.89174pt x 181.18109pt.
+<IMG_9604.jpg, id=49, 3035.34pt x 4047.12pt>
+File: IMG_9604.jpg Graphic file (type jpg)
+<use IMG_9604.jpg>
+Package pdftex.def Info: IMG_9604.jpg  used on input line 160.
+(pdftex.def)             Requested size: 135.89174pt x 181.18623pt.
+<IMG_9605.jpg, id=50, 8094.24pt x 6070.68pt>
+File: IMG_9605.jpg Graphic file (type jpg)
+<use IMG_9605.jpg>
+Package pdftex.def Info: IMG_9605.jpg  used on input line 164.
+(pdftex.def)             Requested size: 135.89174pt x 101.89409pt.
+
+Overfull \hbox (25.19997pt too wide) in alignment at lines 42--170
+ [] [] 
+ []
+
+[4 <./IMG_7909.jpg> <./IMG_8080.jpg> <./IMG_8082.jpg> <./IMG_8084.jpg>] [5 <./IMG_8085.jpg> <./IMG_8086.jpg> <./IMG_8095.jpg>] [6 <./IMG_8096.jpg> <./IMG_8097.jpg> <./IMG_8745.jpg> <./IMG_8746.jpg> <./IMG_8748.jpg> <./IMG_8749.jpg>] [7 <./IMG_8767.jpg> <./IMG_8770.jpg> <./IMG_8771.jpg> <./IMG_8772.jpg> <./IMG_8773.jpg> <./IMG_8774.jpg> <./IMG_8776.jpg> <./IMG_8779.jpg> <./IMG_8783.jpg>] [8 <./IMG_8784.jpg> <./IMG_9382.jpg> <./IMG_9383.jpg> <./IMG_9384.jpg> <./IMG_9385.jpg>] [9 <./IMG_9593.jpg> <./IMG_9594.jpg> <./IMG_9596.jpg> <./IMG_9597.jpg>] [10 <./IMG_9603.jpg> <./IMG_9604.jpg> <./IMG_9605.jpg>]
+<xnoise.jpg, id=73, 1164.35pt x 1076.02pt>
+File: xnoise.jpg Graphic file (type jpg)
+<use xnoise.jpg>
+Package pdftex.def Info: xnoise.jpg  used on input line 183.
+(pdftex.def)             Requested size: 226.48395pt x 209.28944pt.
+<spring.jpg, id=74, 1193.45876pt x 595.22375pt>
+File: spring.jpg Graphic file (type jpg)
+<use spring.jpg>
+Package pdftex.def Info: spring.jpg  used on input line 194.
+(pdftex.def)             Requested size: 226.48395pt x 112.94836pt.
+ [11 <./xnoise.jpg> <./spring.jpg>]
+<deformation.jpg, id=78, 1343.0175pt x 719.68875pt>
+File: deformation.jpg Graphic file (type jpg)
+<use deformation.jpg>
+Package pdftex.def Info: deformation.jpg  used on input line 209.
+(pdftex.def)             Requested size: 226.48395pt x 121.3681pt.
+ [12 <./deformation.jpg>] (./spring.aux) ) 
+Here is how much of TeX's memory you used:
+ 4018 strings out of 476025
+ 71277 string characters out of 5790017
+ 1885388 words of memory out of 5000000
+ 24395 multiletter control sequences out of 15000+600000
+ 517151 words of font info for 48 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 72i,14n,77p,781b,335s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb>
+Output written on spring.pdf (12 pages, 43377965 bytes).
+PDF statistics:
+ 105 PDF objects out of 1000 (max. 8388607)
+ 43 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 186 words of extra memory for PDF output out of 10000 (max. 10000000)
+

@@ -1,0 +1,147 @@
+\documentclass[12pt]{article}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{hyperref}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{datetime}
+\usepackage{geometry}
+\geometry{a4paper, margin=1in}
+
+\title{Comparative Analysis of Physical and Virtual Spring Reverb Technologies}
+\author{
+    Shaojun Chen(s736chen), Jackson He(z262he), Honglin Cao(h45cao) \\
+}
+
+\newdate{date}{09}{02}{2024}
+\date{\displaydate{date}}
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+This project aims to explore the auditory and technical differences between a physical spring reverb pedal and a virtual simulation of spring reverb implemented as a VST (Virtual Studio Technology) audio plugin. By designing, building, and testing a physical spring reverb pedal, and concurrently developing a digital emulation using Projucer, we seek to understand how each medium affects audio signal processing and listener perception. The project will culminate in a comparative analysis based on technical measurements and subjective listening tests.
+\end{abstract}
+
+\tableofcontents
+\newpage
+
+\section{Introduction}
+\subsection{Background}
+
+Reverb, short for reverberation, is a fundamental audio effect that adds depth, spaciousness, and realism to sound recordings and live performances. It occurs when sound waves reflect off surfaces in an environment and then reach our ears, creating a complex blend of delayed and attenuated sound reflections. This phenomenon is what gives a sense of space, whether it's the natural reverberation in a cathedral, the intimate ambiance of a small room, or the ethereal quality of a dreamy musical track. Musicians, audio engineers, and producers often use various reverb techniques and equipment to enhance their audio recordings and achieve desired sonic characteristics.
+
+Spring reverb units have been a cornerstone in audio effects processing, providing distinctive reverberation effects that are difficult to replicate accurately with digital technology. The physical properties of springs contribute unique characteristics to the audio signal, which digital simulations strive to emulate.
+
+Spring reverb is known for its unique, sometimes "boingy" or "twangy" quality, and it has been used in various musical genres, from surf rock to dub reggae. It offers a different sonic character compared to other reverb types like plate, hall, or room reverbs, making it a favorite among musicians and producers looking for a vintage or distinctive sound.
+
+
+\subsection{Project Objectives}
+\begin{itemize}
+    \item Design and manufacture a physical spring reverb pedal.
+    \item Develop a spring reverb VST audio plugin using Projucer.
+    \item Compare the audio processing and output characteristics of both the physical and virtual spring reverb.
+\end{itemize}
+
+\newpage
+\section{Methodology}
+\subsection{Design and Manufacturing of Physical Spring Reverb Pedal}
+This phase focuses on creating a passive spring reverb pedal, simplifying the manufacturing process by minimizing electronic components. The design involves three key steps:
+\begin{enumerate}
+    \item \textbf{Transducer to Jack Connection}: A transducer is soldered directly to a 6.5mm jack connector. This setup allows the conversion of electrical audio signals from the instrument into mechanical vibrations that will be sent through the spring.
+ 
+    \item \textbf{Spring Integration}: The transducers output is mechanically coupled to a spring purchased for its reverberative properties. The selection of the spring is crucial, as its physical characteristics, such as length, tension, and material affect the sound of the reverb.
+
+    \item \textbf{Shell Design}: A protective shell or enclosure is designed to house the spring and transducer assembly. This shell not only protects the components but also serves as a resonance chamber, influencing the pedal's overall sound. The design will be approached with consideration for acoustic properties, durability, and aesthetic appeal.
+
+\end{enumerate}
+
+\subsection{Development of Spring Reverb VST Plugin}
+The development of our Spring Reverb VST plugin focuses on digitally emulating the acoustic properties of our physical spring reverb pedal. The process involves the following streamlined steps:
+
+\begin{enumerate}
+    \item \textbf{Algorithm Research}: We will source a generic spring reverb algorithm from available online resources, targeting one that accurately captures the essence of spring reverb's unique sound characteristics.
+    
+    \item \textbf{Projucer Implementation}: The chosen algorithm will be implemented in Projucer, ensuring the plugin is compatible across various DAWs. Emphasis will be on modular design for ease of parameter adjustments.
+    
+    \item \textbf{Adjustable Parameters}: Key to our VST plugin is the ability to tweak spring parameters such as length, tension, and mass to align with our physical model's specifications. This feature will enable precise matching and comparative analysis between the digital and analog reverbs.
+    
+    \item \textbf{Iterative Testing and Refinement}: Through direct comparison with the physical pedal's sound, we'll refine our VST to closely mimic its characteristics, adjusting the algorithm and interface based on feedback and test results.
+    
+\end{enumerate}
+
+This development strategy aims to bridge the gap between analog authenticity and digital flexibility, creating a VST plugin that faithfully replicates the nuanced sound of our physical spring reverb pedal.
+
+
+\newpage
+\section{Tools and Technologies}
+
+\subsection{Hardware Tools and Materials}
+The construction of the physical spring reverb pedal relies on a streamlined selection of tools and materials, as detailed below:
+
+\begin{enumerate}
+    \item \textbf{Soldering Tools}: Basic soldering equipment for attaching the transducer to the socket and ensuring secure connections.
+    \item \textbf{Design Software}: Autodesk Fusion 360 for designing the pedal's shell, leveraging its comprehensive tools for 3D modeling.
+    \item \textbf{3D Printing}: Utilization of both resin and filament 3D printers to fabricate the shell designed in Fusion 360, allowing for precision and customization.
+    \item \textbf{Components Sourcing}: Key components, including the socket, spring, and transducer, will be sourced from online retailers like Amazon. This approach ensures accessibility and a wide range of options for customization.
+\end{enumerate}
+
+This combination of tools and sourcing strategies facilitates a flexible and efficient approach to constructing the physical spring reverb pedal, from design through to assembly.
+
+\subsection{Software Tools}
+The development of the Spring Reverb VST plugin will primarily utilize the following software tools, with the flexibility to incorporate additional resources as needed:
+
+\begin{enumerate}
+    \item \textbf{Projucer}: As the central platform for VST plugin development, Projucer will facilitate the creation, testing, and debugging of the spring reverb emulation, ensuring compatibility across different operating systems and DAWs.
+    \item \textbf{Visual Studio Code (VS Code)}: This lightweight, versatile IDE will be used for general coding tasks, script editing, and version control integration, offering a streamlined development workflow.
+    \item \textbf{Additional Tools}: Recognizing the iterative nature of software development, we remain open to adopting further tools and libraries to address specific challenges or enhance functionality throughout the project lifecycle.
+\end{enumerate}
+
+This approach ensures a robust and adaptable development environment, capable of accommodating the evolving needs of the project as we progress.
+
+
+\newpage
+\section{Evaluation and Comparison}
+The testing process is designed to capture the characteristics of the spring reverb pedal and compare them with the digital emulation provided by the VST plugin. The following steps outline the testing methodology:
+\begin{enumerate}
+    \item \textbf{Recording Dry Signal}: A guitar is connected directly to a sound interface to record a "dry" signal, which is devoid of any reverb or effects.
+    \item \textbf{Physical Pedal Testing}: The recorded dry signal is then played back through the physical spring reverb pedal, and the output is captured by the sound interface. This process ensures that the effect of the pedal on the original signal is accurately recorded.
+    \item \textbf{Software Reverb VST Application}: The same dry signal is imported into a Digital Audio Workstation (DAW), where the spring reverb VST plugin is applied. This step allows for direct comparison between the physical pedal's effect and the software emulation.
+\end{enumerate}
+
+\subsection{Listening Tests}
+The listening tests are designed to assess the perceptual differences between the hardware (physical spring reverb pedal) and software (VST plugin) reverb effects. To ensure a fair and unbiased comparison, the following methodology will be employed:
+
+\begin{enumerate}
+    \item \textbf{Blind Test Setup}: The tests will be conducted in a blind manner, where the listeners are unaware of whether they are hearing the hardware or software reverb effect. This approach minimizes bias and allows for an objective assessment of the sound quality and characteristics of each reverb type.
+    
+    \item \textbf{Participants}: At least 10 friends of our group member will participate in the listening tests. This small but diverse group of listeners provides a range of perspectives and audio experience, contributing to a more rounded evaluation of the reverb effects.
+    
+    \item \textbf{Test Signals}: The same recorded dry guitar signal will be used for all tests. This signal will be processed through both the physical spring reverb pedal and the software VST plugin to create two versions of the reverb affected signal.
+    
+    \item \textbf{Evaluation Criteria}: Listeners will be asked to evaluate the reverb effects based on several criteria, including perceived realism, depth, warmth, and overall preference. These subjective metrics aim to capture the nuances that differentiate the hardware and software solutions.
+    
+    \item \textbf{Feedback Collection}: After each listening session, participants will provide feedback on which version they believe is the hardware reverb and which is the software. They will also rate each version based on the evaluation criteria. This feedback will be collected anonymously to further ensure the integrity of the test results.
+\end{enumerate}
+
+The results of the listening tests will be analyzed to determine if there are consistent preferences or perceptual differences between the hardware and software reverbs among the group members. This analysis will contribute valuable insights into the effectiveness of the digital emulation compared to the physical reverb effect, as well as inform potential improvements for both the pedal design and the VST plugin development.
+
+\newpage
+\section{Expected Outcomes}
+Given the meticulous design of the physical spring reverb pedal and the precise digital emulation within the VST plugin, a key anticipated outcome is the indistinguishability between the two in terms of sound quality when the parameters of the VST spring reverb are set to closely match the physical characteristics of the reverb's spring used in the pedal. Specifically, we expect the following results:
+
+\begin{enumerate}
+    \item \textbf{Perceptual Transparency}: When the parameters of the VST plugin, such as decay time, spring tension, and number of springs, are adjusted to match those of the physical spring reverb pedal, listeners should find it challenging to distinguish between the hardware and software reverb in blind listening tests. This outcome would suggest a high degree of fidelity in the software's emulation capabilities.
+    
+    \item \textbf{Objective Analysis Concordance}: Objective measures of the reverb characteristics, including frequency response, decay patterns, and harmonic content, should demonstrate a close match between the physical and virtual reverbs. This similarity would provide quantitative support for the subjective listening test results.
+    
+    \item \textbf{Educational Value}: Through the process of designing, building, testing, and comparing the physical and virtual spring reverbs, we anticipate gaining deeper insights into both analog and digital signal processing techniques. This knowledge is invaluable for our future audio engineering projects and professional growth.
+\end{enumerate}
+
+Ultimately, achieving a level of sound quality between the physical and virtual reverbs that is perceptually indistinguishable would mark a significant success for this project. It would not only validate the accuracy of the VST plugin's emulation but also underscore the potential for digital technologies to replicate complex analog audio effects faithfully.
+
+
+
+\end{document}

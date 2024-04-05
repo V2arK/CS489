@@ -1,0 +1,69 @@
+\documentclass[12pt]{article}
+\usepackage{algo,fullpage,url,amssymb,epsfig,color,xspace,tikz,amsmath}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{scalerel}
+\usepackage{adjustbox}
+\usepackage[pdftitle={CS 489},
+pdfsubject={University of Waterloo, CS 489, Winter 2024},
+pdfauthor={Arne Storjohann}]{hyperref}
+\usepackage{algpseudocode,enumitem,calc,multicol}
+\def\decibel{\scalerel{$d$\kern-1.4pt}{\clipbox{2pt 0pt 0pt 0pt}{B}}}
+
+\usepackage{listings}
+\lstset{%
+        language=C++,
+        keepspaces=true,
+        basicstyle=\small\ttfamily,
+       commentstyle=\footnotesize\itshape{},
+       identifierstyle=\slshape{},
+       keywordstyle=\bfseries,
+       numbers=left,
+       numberstyle=\tiny{},
+       numberblanklines=false,
+       inputencoding={utf8},
+       columns=fullflexible,
+       basewidth=.5em,
+        fontadjust=true,
+        tabsize=3,
+        emptylines=*1,
+       breaklines,
+       breakindent=30pt,
+        prebreak=\smash{\raisebox{-.5ex}{\hbox{\tiny$\hookleftarrow$}}},
+    escapeinside={//*}{\^^M} % Allow to set labels and the like in comments starting with //*
+	}
+
+
+\renewcommand{\thesubsection}{Problem \arabic{subsection}}
+
+\begin{document}
+
+\begin{center}
+  {\Large\bf University of Waterloo}\\ \vspace{3mm}
+  {\Large\bf CS 489, Winter 2024}\\ \vspace{2mm}
+\end{center}
+
+\definecolor{care}{rgb}{0,0,0}
+\def\question#1{\item[\bf #1.]}
+\def\part#1{\item[\bf #1)]}
+\newcommand{\pc}[1]{\mbox{\textbf{#1}}} % pseudocode
+
+\begin{minipage}[t]{0.33\textwidth} % The left column takes up 33% of the text width of the page
+	\textbf{Decibel approximation}
+	
+ 		$+20 \decibel \approx \times 10$ \\
+ 		$+6 \decibel \approx \times 2$ \\
+ 		$-10 \decibel \approx \times 0.31$ \\
+	
+\end{minipage}
+
+\begin{minipage}[t]{0.33\textwidth} % The middle column takes up 33% of the text width of the page
+	
+\end{minipage}
+
+\begin{minipage}[t]{0.33\textwidth} % The right column takes up 33% of the text width of the page
+	
+\end{minipage}
+
+
+\end{document}
