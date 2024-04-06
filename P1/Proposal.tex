@@ -32,7 +32,7 @@
 \maketitle
 
 \begin{abstract}
-This project aims to explore the auditory and technical differences between a physical spring reverb pedal and a virtual simulation of spring reverb implemented as a script. By designing, building, and testing a physical spring reverb pedal, and concurrently developing a digital emulation using Octave, we seek to understand how each medium affects audio signal processing and listener perception. The project will culminate in a comparative analysis based on technical measurements and subjective listening tests.
+This project aims to explore the auditory and technical differences between a physical spring reverb pedal, a virtual simulation of spring reverb implemented as a script and some commercially available spring reverb plugin. By designing, building, and testing a physical spring reverb pedal, and concurrently developing a digital emulation using Octave, we seek to understand how each medium affects audio signal processing and listener perception. The project will culminate in a comparative analysis based on technical measurements and subjective listening tests.
 \end{abstract}
 
 \tableofcontents
@@ -112,7 +112,11 @@ And the following parameters we could change:
 \newpage
 \section{Implementation}
 
-In this section of our report, we delve into the practical aspects of bringing our conceptual designs to life. This chapter is dedicated to providing a comprehensive overview of our journey from conceptualization to realization, including both our hardware and software development processes for the spring reverb project.
+In this section of our report, we delve into the practical aspects of bringing our conceptual designs to life. This chapter is dedicated to providing a comprehensive overview of our journey from conceptualization to realization, including both our hardware and software development processes for the spring reverb project, as well as .
+
+\subsection{Testing clip}
+
+
 
 \subsection{Hardware spring reverb}
 
@@ -288,7 +292,7 @@ We can modify the file name in line 40: \texttt{\footnotesize [input\_signal, fs
 
 To implement the filter, we used a Gaussian filter centred around the natural frequency of the spring. We applied FFT and IFFT to obtain the filtered signal. The \texttt{spring\_filter} function was used to filter the input signal, simulating the effect of the spring's natural frequency on the sound. While implementing the delay network, we used a loop and buffer to record the decay signal to add the reverb effects to the output signal. We recorded the delay buffer and calculated the superposition of multiple echoes. The intensity of each was decreased according to the feedback gain and decay rate. 
 
-Finally, the reverb signal and the original signal were mixed following a set ratio and written as the new output signal. 
+Finally, the reverb signal and the original signal were mixed following a set ratio (60\% wet in our code\footnote{\scriptsize If we set the mix ratio to 100\% wet, all the outputs will sounds just like a delay effect due to our implementation. Plus, our physical reverb implementation's housing also directly transmitted portion of the dry signal to the piezoelectric pickup. And 60\% was decided because it produced the most pleasing tone on our testing clip.}) and written as the new output signal. 
 
 \begin{algorithm}
 \caption{Spring Reverb Simulation Pseudocode}
