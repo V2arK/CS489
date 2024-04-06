@@ -55,7 +55,7 @@ For this project, we firstly googled and find some photos of reverb tanks used i
 
 \begin{figure*}[h]
 	\center
-	\includegraphics[width=0.3\linewidth]{small_tank_out_detail.png}
+	\includegraphics[width=0.3\linewidth]{photos/small_tank_out_detail.png}
 	\caption{A closer look of a commercial reverb tanks}
 \end{figure*}
 
@@ -79,7 +79,7 @@ The fundamental framework included digital audio processing in Octave, filter de
 
 \begin{figure*}[h]
 	\center
-	\includegraphics[width=0.6\linewidth]{reverb.drawio.png}
+	\includegraphics[width=0.6\linewidth]{photos/reverb.drawio.png}
 \end{figure*}
 
 In the above figure, we splited the input into two copies. One for the dry mix, and the another one for the spring algorithm to precess. Finally, we mixed them and wrote it as the output file. For the spring signal, the copy of the input first goes through a filter. Then, the processed signal was sent to the output, and a portion of the decay signal is sent back through the delay line into the filter again. The signal undergoes multiple overlaps, presenting a delayed effect. By controlling the delay time and adjusting the filter parameters, we achieve a simple simulation of the spring reverb effect.
@@ -121,124 +121,124 @@ In this section of our report, we delve into the practical aspects of bringing o
 \textbf{Photo} & \textbf{Description} \\
 \hline
 
-\includegraphics[width=0.2\textwidth,valign=c]{IMG_7909.jpg} & 
+\includegraphics[width=0.2\textwidth,valign=c]{photos/IMG_7909.jpg} & 
 purchased surface transducer, driver board for the transducer, guitar piezo pickup, 6.5mm audio jack and several metal springs. \\ 
 \hline
 
-\includegraphics[width=0.2\textwidth,,valign=c]{IMG_8080.jpg} & 
+\includegraphics[width=0.2\textwidth,,valign=c]{photos/IMG_8080.jpg} & 
 Used a power supply board and a bread board from my Arduino kit, prepare to solder the wires. \\ 
 \hline
 
-\includegraphics[width=0.2\textwidth,,valign=c]{IMG_8082.jpg} & 
+\includegraphics[width=0.2\textwidth,,valign=c]{photos/IMG_8082.jpg} & 
 Soldered the pin to the transducer driver board. \\ 
 \hline
 
-\includegraphics[width=0.2\textwidth,,valign=c]{IMG_8084.jpg} & 
+\includegraphics[width=0.2\textwidth,,valign=c]{photos/IMG_8084.jpg} & 
 The power supply board needs 9V battery, trying to use my Raspberry PI Zero 2W to power the driver board instead. Used multimeter to determine the 5V and GND. \\ 
 \hline
 
-\includegraphics[width=0.2\textwidth,,valign=c]{IMG_8085.jpg} & 
+\includegraphics[width=0.2\textwidth,,valign=c]{photos/IMG_8085.jpg} & 
 Soldered the surface transducer to a GPIO pin for easier connection later. \\ 
 \hline
 
-\includegraphics[width=0.2\textwidth,,valign=c]{IMG_8086.jpg} & 
+\includegraphics[width=0.2\textwidth,,valign=c]{photos/IMG_8086.jpg} & 
 Connected both the driver board and the transducer itself to the bread board with Arduino cables. \\ 
 \hline
 
-\includegraphics[width=0.2\textwidth,,valign=c]{IMG_8095.jpg} & 
+\includegraphics[width=0.2\textwidth,,valign=c]{photos/IMG_8095.jpg} & 
 The 6.5 jack I purchased is stereo, even though we are only doing a mono output, but I soldered 3 wires to it. \\ 
 \hline
 
-\includegraphics[width=0.2\textwidth,,valign=c]{IMG_8096.jpg} & 
+\includegraphics[width=0.2\textwidth,,valign=c]{photos/IMG_8096.jpg} & 
 Soldered piezo pickup to 2 wires as well, i want to try to drive the piezo pickup with the transducer driver board. \\ 
 \hline
 
-\includegraphics[width=0.2\textwidth,,valign=c]{IMG_8097.jpg} & 
+\includegraphics[width=0.2\textwidth,,valign=c]{photos/IMG_8097.jpg} & 
  Redo the GPIO pins only for 5V and GND so I can mount driver boards directly onto the bread board, and soldered the 6.5 Jack to the input and output of driver boards respectively, also soldered the piezo pickup to the input of one of the driver board.\\ 
 \hline
 
-\includegraphics[width=0.066\textwidth,,valign=c]{IMG_8745.jpg} 
-\includegraphics[width=0.066\textwidth,,valign=c]{IMG_8746.jpg} 
-\includegraphics[width=0.066\textwidth,,valign=c]{IMG_8748.jpg} & 
+\includegraphics[width=0.066\textwidth,,valign=c]{photos/IMG_8745.jpg} 
+\includegraphics[width=0.066\textwidth,,valign=c]{photos/IMG_8746.jpg} 
+\includegraphics[width=0.066\textwidth,,valign=c]{photos/IMG_8748.jpg} & 
 Measuring the dimension of the surface transducer for designing housing for the spring reverb. \\ 
 \hline
 
-\includegraphics[width=0.2\textwidth,,valign=c]{IMG_8749.jpg} & 
+\includegraphics[width=0.2\textwidth,,valign=c]{photos/IMG_8749.jpg} & 
  Design and FDM 3D printed a hook that i will glue to the surface tranducer to hold the spring. \\ 
 \hline
 
-\includegraphics[width=0.2\textwidth,,valign=c]{IMG_8767.jpg} & 
+\includegraphics[width=0.2\textwidth,,valign=c]{photos/IMG_8767.jpg} & 
  Glued the hook to the surface transducer.\\ 
 \hline
 
-\includegraphics[width=0.066\textwidth,,valign=c]{IMG_8770.jpg}
-\includegraphics[width=0.066\textwidth,,valign=c]{IMG_8771.jpg}
-\includegraphics[width=0.066\textwidth,,valign=c]{IMG_8772.jpg} & 
+\includegraphics[width=0.066\textwidth,,valign=c]{photos/IMG_8770.jpg}
+\includegraphics[width=0.066\textwidth,,valign=c]{photos/IMG_8771.jpg}
+\includegraphics[width=0.066\textwidth,,valign=c]{photos/IMG_8772.jpg} & 
 Doing some measurement on the piezo pickup for designing housing for spring reverb. \\ 
 \hline
 
-\includegraphics[width=0.1\textwidth,,valign=c]{IMG_8773.jpg}
-\includegraphics[width=0.1\textwidth,,valign=c]{IMG_8774.jpg} & 
+\includegraphics[width=0.1\textwidth,,valign=c]{photos/IMG_8773.jpg}
+\includegraphics[width=0.1\textwidth,,valign=c]{photos/IMG_8774.jpg} & 
 Designed the housing for spring reverb in Fusion 360, output to PrusSlicer for printing on SLA resin printer. \\ 
 \hline
 
-\includegraphics[width=0.2\textwidth,,valign=c]{IMG_8776.jpg} & 
+\includegraphics[width=0.2\textwidth,,valign=c]{photos/IMG_8776.jpg} & 
  Also designed a seperated version to glue on together later, just to make sure at least one version will be available.\\ 
 \hline
 
-\includegraphics[width=0.2\textwidth,,valign=c]{IMG_8779.jpg} & 
+\includegraphics[width=0.2\textwidth,,valign=c]{photos/IMG_8779.jpg} & 
 SLA resin print finished \\ 
 \hline
 
-\includegraphics[width=0.2\textwidth,,valign=c]{IMG_8783.jpg} & 
+\includegraphics[width=0.2\textwidth,,valign=c]{photos/IMG_8783.jpg} & 
 Post processing done \\ 
 \hline
 
-\includegraphics[width=0.2\textwidth,,valign=c]{IMG_8784.jpg} & 
+\includegraphics[width=0.2\textwidth,,valign=c]{photos/IMG_8784.jpg} & 
 Mount components to the housing, dimension seems correct. \\ 
 \hline
 
-\includegraphics[width=0.2\textwidth,,valign=c]{IMG_9382.jpg} & 
+\includegraphics[width=0.2\textwidth,,valign=c]{photos/IMG_9382.jpg} & 
 To prevent vibration of the surface transducer, applied automotive foam tape to the housing printed previously for gluing up. \\ 
 \hline
 
-\includegraphics[width=0.2\textwidth,,valign=c]{IMG_9383.jpg} & 
+\includegraphics[width=0.2\textwidth,,valign=c]{photos/IMG_9383.jpg} & 
 Applied foam tape to the two sides, so when bounding the 3 piece together the vibration wouldn't affect the piezo pickup system. \\ 
 \hline
 
-\includegraphics[width=0.2\textwidth,,valign=c]{IMG_9384.jpg} & 
+\includegraphics[width=0.2\textwidth,,valign=c]{photos/IMG_9384.jpg} & 
 Connect the 3 piece using duct tape, so the joint (foam tape) is flexible and able to absorb vibrations.\\ 
 \hline
 
-\includegraphics[width=0.2\textwidth,,valign=c]{IMG_9385.jpg} & 
+\includegraphics[width=0.2\textwidth,,valign=c]{photos/IMG_9385.jpg} & 
 Installed all the components to the housing. \\ 
 \hline
 
-\includegraphics[width=0.2\textwidth,,valign=c]{IMG_9593.jpg} & 
+\includegraphics[width=0.2\textwidth,,valign=c]{photos/IMG_9593.jpg} & 
 The amplifier for the surface transducer is broken somewhere, it's no longer functioning. Will use my bookshelf speaker amp to drive the surface transducer, it should be even better than the original amplifier I built for the surface transducer.\\ 
 \hline
 
-\includegraphics[width=0.2\textwidth,,valign=c]{IMG_9594.jpg} & 
+\includegraphics[width=0.2\textwidth,,valign=c]{photos/IMG_9594.jpg} & 
 Take the speaker cable connector from my DIY bookshelf speaker \\ 
 \hline
 
-\includegraphics[width=0.2\textwidth,,valign=c]{IMG_9596.jpg} & 
+\includegraphics[width=0.2\textwidth,,valign=c]{photos/IMG_9596.jpg} & 
 Connected the cable connector to the surface transducer. \\ 
 \hline
 
-\includegraphics[width=0.2\textwidth,,valign=c]{IMG_9597.jpg} & 
+\includegraphics[width=0.2\textwidth,,valign=c]{photos/IMG_9597.jpg} & 
 The amp works really well (it even has EQ adjustments), and the damping foam tape works as well, only around 20\% of the surface transducer's vibration is able to reach the plate housing the piezo pickup. Now it shouldn't affecting the piezo pickup anymore. \\ 
 \hline
 
-\includegraphics[width=0.2\textwidth,,valign=c]{IMG_9603.jpg} & 
+\includegraphics[width=0.2\textwidth,,valign=c]{photos/IMG_9603.jpg} & 
 Some testing shows the surface transducer is moving inside the hole holding it creating some squeaking sound. Applied some UV curing resin to the surface transducer and using UV curing station for SLA printer to cure the resin. \\ 
 \hline
 
-\includegraphics[width=0.2\textwidth,,valign=c]{IMG_9604.jpg} & 
+\includegraphics[width=0.2\textwidth,,valign=c]{photos/IMG_9604.jpg} & 
 Now the surface transducer is permanently mounted to the housing plate.  \\ 
 \hline
 
-\includegraphics[width=0.2\textwidth,,valign=c]{IMG_9605.jpg} & 
+\includegraphics[width=0.2\textwidth,,valign=c]{photos/IMG_9605.jpg} & 
 Final recording setup completed. \\ 
 \hline
 
@@ -253,7 +253,7 @@ Due to the piezo pickup being designed for guitar use, its sensitivity was insuf
 
 \begin{figure*}[h]
 \center
-	\includegraphics[width=0.5\linewidth]{xnoise.jpg}
+	\includegraphics[width=0.5\linewidth]{photos/xnoise.jpg}
 	\caption{Using plugin to cancel the noises}
 \end{figure*}
 
@@ -263,7 +263,7 @@ During the recording process, we found that when the amplifier for the surface t
 
 \begin{figure*}[h] 
 	\center 
-	\includegraphics[width=0.5\linewidth]{spring.jpg} 
+	\includegraphics[width=0.5\linewidth]{photos/spring.jpg} 
 	\caption{Spring used in my reverb tank} 
 \end{figure*} 
 
@@ -275,7 +275,7 @@ Lastly, the use of foam tape with duct tape seems quite effective for stopping t
 
 \begin{figure*}[h] 
 	\center 
-	\includegraphics[width=0.5\linewidth]{deformation.jpg} 
+	\includegraphics[width=0.5\linewidth]{photos/deformation.jpg} 
 	\caption{Housing is no longer straight under the tension of the spring} 
 \end{figure*} 
 %%%%%
