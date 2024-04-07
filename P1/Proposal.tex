@@ -112,11 +112,29 @@ And the following parameters we could change:
 \newpage
 \section{Implementation}
 
-In this section of our report, we delve into the practical aspects of bringing our conceptual designs to life. This chapter is dedicated to providing a comprehensive overview of our journey from conceptualization to realization, including both our hardware and software development processes for the spring reverb project, as well as .
+ This chapter offers an in-depth examination of our journey from initial concept to actual implementation, covering the development of both hardware and software aspects of the spring reverb project. We also detail the methodologies employed in creating the testing clip and in deriving results from a commercially available reverb unit.
 
-\subsection{Testing clip}
+\subsection{Generating testing clip}
 
+We recorded the testing audio clips using a Fender Telecaster and a Audient sound interface, with ``Neural'' plugin on Logic Pro as a guitar amplifier simulator. Three audio clip were recorded to have a comprehensive testing suite for the effect of a reverb unit. The input WAV files were \texttt{input\_chord.wav}, \texttt{input\_melody.wav} and \texttt{input\_short\_note.wav}.
 
+ \begin{figure*}[h] 
+	\center 
+	\includegraphics[width=0.2\linewidth]{photos/clip_record_setup.jpg} 
+	\caption{Recording setup} 
+\end{figure*} 
+
+We chose to record internally rather than using microphone was because we could completely avoid any possible reverb effect from the physical environment we were in, so we could easily compare the effect later on.
+
+\subsection{Generating reference clip}
+
+To provide a controlled reference for our evaluation, we applied a Logic built-in spring reverb effect plugin to the input files. The pre-set of the Logic Spring Reverb is: TIME = Medium, Tone = -20, STYLE = Boutique, MIX = 60\%. 
+
+ \begin{figure*}[h] 
+	\center 
+	\includegraphics[width=0.4\linewidth]{photos/reverb.jpg} 
+	\caption{Reference clip setup} 
+\end{figure*} 
 
 \subsection{Hardware spring reverb}
 
@@ -359,6 +377,84 @@ Although we omitted the issue of computational efficiency this time to simplify 
 
 \newpage
 \section{Evaluation and Comparison}
+
+\subsection{Hearing comparison}
+
+Firstly, we were very surprised that our digital spring reverb generated almost exactly the same effect as the commercially available spring reverb in Logic Pro. The only discrepancy came from the mix rate. Even though we set the mix rate for both of them to be 60\%, but the reverberation effect was way more prominent than our digital spring reverb. However, comparing to the physical reverb unit we built, the resulting sound from them could be described as applied many iterations of delay effect rather than an actual reverberation effect. 
+
+In contrast of both software spring reverb unit as mentioned above, our physical spring reverb units had heavily modified the sound signature of the testing clip. The reverberation effect from it was much more organic and continuous, combined with the warmth it added to the clip, made it sounded much like a Chamber reverb effect.
+ 
+\subsection{Going deeper}
+Before moving into comparison, we pre-processed all audios types (short note, chord, melody) of different source (original input, digital reverb output, physical reverb output, logic reverb output) into normalized audio such that they become easier to compare.\footnote{Code given in Appendix}
+
+In the graphs below, we ordered the audio by 
+\begin{enumerate}
+    \item input audio
+    \item digital reverb output audio
+    \item physical reverb output audio
+    \item logic reverb (commercial) output audio
+\end{enumerate}
+
+We will begin by examining the waveform of each audio type.\newpage
+
+Considering the waveform of the short note audio, we saw that all three reverbs did a great job creating the reverberation effect of spring reverb, where they made the sound extending longer than the original input and decayed over time. However, we noticed that both digital reverb and logic reverb produced the short note with a strong instant entry, while the physical reverb produced the short note with a soft gradual entry. This behavior of the physical reverb is expected due to its fundamental property. The different behavior shown in the digital reverb and the logic reverb weren't expected, but can be explained to be the drawback of the algorithm used, or simply due to the lower mix rate being used such that more of the original input audio got mixed.
+
+\begin{figure*}[h]
+	\center
+	\includegraphics[width=\linewidth]{audio_comparison/short_note_comparison_wave.png}
+	\caption{Waveform comparison for short notes}
+\end{figure*}
+
+
+\newpage
+
+
+In the waveform of chords and melody, we saw the same feature as we discussed above, which the processed audio extended longer than the original input and decayed over time. However, we noticed that in the waveform of chords, the beginning of the physical reverb output has been slightly cut off. This was because the physical reverbs uses the output of WeChat as input, and WeChat automatically adds a fade in effect at the beginning of the audio, thus should not be a concern. We also noticed that the output of physical reverb tend to be softer and smoother than other source. This can be explained to be the fundamental property of a true spring reverb, and also due to the the lower mix rate being used in digital reverb and logic reverb such that more of the original input audio gets mixed.
+
+\begin{figure*}[h]
+	\center
+	\includegraphics[width=\linewidth]{audio_comparison/chord_comparison_wave.png}
+	\caption{Waveform comparison for chord}
+\end{figure*}
+
+\begin{figure*}[h]
+	\center
+	\includegraphics[width=\linewidth]{audio_comparison/melody_comparison_wave.png}
+	\caption{Waveform comparison for melody}
+\end{figure*}
+
+\newpage
+
+In the spectrogram of the short note audio, we saw that the physical reverb filtered out a lot of the high frequencies and low frequencies in the audio (especially high frequencies). This conformed with our theory that the spring has a fundamental frequency, which frequencies close to its fundamental frequency would be kept and frequencies far away from its fundamental frequency would be filtered out. Our digital reverb also has the same property, but our filter was not aggressive enough and kept more higher frequencies compared to the physical reverb. This could be improved by changing the filter parameter and increase the mix rate.
+
+In the spectrogram of both short note and chord audio, we also saw that lower frequencies in the physical reverb's output tend to last longer compare to higher frequencies. Our explanation for this was the higher frequencies tend to lose its energy faster when travelling through the spring. However, we didn't see such property in the digital reverb and logic reverb's output, where all frequencies last for about the same amount of time.
+
+\begin{figure*}[h]
+	\center
+	\includegraphics[width=0.95\linewidth]{audio_comparison/short_note_comparison_spec.png}
+	\caption{Spectrogram comparison for short notes}
+\end{figure*}
+
+\begin{figure*}[h]
+	\center
+	\includegraphics[width=0.95\linewidth]{audio_comparison/chord_comparison_spec.png}
+	\caption{Spectrogram comparison for chord}
+\end{figure*}
+
+\newpage
+
+Last, in the spectrogram of the melody, we saw some interesting results.
+
+By comparing the input audio, digital reverb's output and the logic reverb's output, we see that more vertical bars appear in the spectrogram for the digital reverb and logic reverb's output. Our explanation for this was that, those were the result of add old signals remain in the spring to newer signals (that's our understanding of how the spring reverb works). We also saw that the logic reverb had the feedback added more frequently than the digital reverb.
+
+Observing that the physical reverb didn't have such property appearing, we concluded that this might be because of the real spring reverb does the feedback process in a continuous time, where the software does the feedback process as a discrete computation.
+
+\begin{figure*}[h]
+	\center
+	\includegraphics[width=\linewidth]{audio_comparison/melody_comparison_spec.png}
+	\caption{Spectrogram comparison for melody}
+\end{figure*}
+
 
 \newpage
 \section{Conclusion}
